@@ -22,24 +22,6 @@ En línea: [carlosdanielportafolio.vercel.app](https://carlosdanielportafolio.ve
 | Sistema de piscina | Control de acceso y pagos para clubes con piscina, con PostgreSQL sobre Supabase | [piscina-app.vercel.app](https://piscina-app.vercel.app) |
 | TranscriptoHub | Procesamiento de secuencias de ARN en Python | Proyecto de grado |
 
-## Stack del sitio
-
-Sitio estático de un solo archivo. Sin framework, sin dependencias, sin paso de build.
-
-| Componente | Tecnología |
-|---|---|
-| Estructura | HTML5 |
-| Estilos | CSS3 embebido |
-| Tipografía | IBM Plex Mono |
-| Despliegue | Vercel |
-
-## Estructura
-
-```
-index.html                            Página completa: estructura, estilos y contenido
-Desarrollador y Soporte_CarlosP.pdf   Hoja de vida enlazada desde el botón de descarga
-```
-
 ## Contacto
 
 - Correo: carlosdanielpolanco0@gmail.com
