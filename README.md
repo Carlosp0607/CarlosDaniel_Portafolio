@@ -1,13 +1,15 @@
 # Carlos Daniel Polanco | Portafolio
 
-Ingeniero de Software enfocado en desarrollo backend con Python (Flask, FastAPI) y soporte tecnológico. En esta página reúno mis proyectos desplegados, mi stack y mis datos de contacto.
+Ingeniero de Software con experiencia en soporte tecnológico y de aplicaciones. En esta página reúno mis casos de soporte documentados, mis proyectos desplegados, mi stack y mis datos de contacto.
 
 En línea: [carlosdanielportafolio.vercel.app](https://carlosdanielportafolio.vercel.app)
 
 ## Qué contiene
 
-- Perfil profesional y stack técnico: Python, Flask, FastAPI, API REST, PostgreSQL (Aiven, Supabase), pytest, GitHub Actions, integración de inteligencia artificial a través de OpenRouter y despliegue en Render y Vercel.
-- Seis proyectos, con enlace al repositorio y a su demo en vivo.
+- Perfil profesional con enfoque en soporte tecnológico y de aplicaciones.
+- Casos de soporte documentados en formato ticket, con enlace a cada caso en el repositorio [soporte-portafolio](https://github.com/Carlosp0607/soporte-portafolio).
+- Proyectos con enlace al repositorio y a su demo en vivo.
+- Stack: soporte y mesa de ayuda, SQL y PostgreSQL, ofimática, contabilidad (SENA, en curso) y desarrollo con Python.
 - Descarga directa de mi hoja de vida en PDF.
 - Contacto: correo, teléfono, GitHub y LinkedIn.
 
@@ -15,12 +17,14 @@ En línea: [carlosdanielportafolio.vercel.app](https://carlosdanielportafolio.ve
 
 | Proyecto | Descripción | Demo |
 |---|---|---|
-| LexDoc | Gestión de casos jurídicos con control de acceso por roles, alertas de vencimiento y pruebas en pytest. Desarrollado en prestación de servicios | [lexdoc.onrender.com](https://lexdoc.onrender.com) |
-| Mesa de Ayuda | API REST de tickets de soporte con flujo de estados, SLA, escalamiento, base de conocimiento e indicadores en SQL | [mesa-ayuda-4wfr.onrender.com](https://mesa-ayuda-4wfr.onrender.com/reportes/resumen) |
-| MediAssist Rural | Orientación en salud con inteligencia artificial vía OpenRouter, presentado al Gemma 4 Good Hackathon de Google DeepMind | [mediassist-rural.vercel.app](https://mediassist-rural.vercel.app) |
-| Don Parqueo | SaaS multi-empresa para parqueaderos, con aislamiento de datos por empresa y cobro en transacción SQL | [parqueadero-app-zbj3.onrender.com](https://parqueadero-app-zbj3.onrender.com) |
-| Sistema de piscina | Control de acceso y pagos para clubes con piscina, con PostgreSQL sobre Supabase | [piscina-app.vercel.app](https://piscina-app.vercel.app) |
+| Portafolio de Soporte | Casos de soporte documentados, base de conocimiento, SQL de diagnóstico y manual de usuario por rol | [Repositorio](https://github.com/Carlosp0607/soporte-portafolio) |
+| Mesa de Ayuda | Tickets de soporte con flujo de estados, SLA, escalamiento, base de conocimiento e indicadores en SQL | [mesa-ayuda-4wfr.onrender.com](https://mesa-ayuda-4wfr.onrender.com/reportes/resumen) |
+| LexDoc | Gestión de casos jurídicos con roles y alertas de vencimiento. Desarrollado en prestación de servicios, con soporte y capacitación a los usuarios | [lexdoc.onrender.com](https://lexdoc.onrender.com) |
+| Don Parqueo | Sistema multiempresa para parqueaderos: cobro por tarifa, turnos de caja y reportes | [don-parqueo.onrender.com](https://don-parqueo.onrender.com) |
+| Citas Consultorio | API de citas médicas con especialidad sugerida por IA | [citas-consultorio.onrender.com](https://citas-consultorio.onrender.com) |
+| MediAssist Rural | Orientación en salud con IA, presentado al Gemma 4 Good Hackathon | [mediassist-rural.vercel.app](https://mediassist-rural.vercel.app) |
 | TranscriptoHub | Procesamiento de secuencias de ARN en Python | Proyecto de grado |
+| Sistema de piscina | Control de acceso y pagos para clubes con piscina | [piscina-app.vercel.app](https://piscina-app.vercel.app) |
 
 ## Contacto
 
