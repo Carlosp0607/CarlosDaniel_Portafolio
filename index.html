@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carlos Daniel Polanco | Ingeniero de Software - Soporte Tecnológico</title>
-<meta name="description" content="Portafolio de Carlos Daniel Polanco, Ingeniero de Software con experiencia en soporte tecnológico, atención y capacitación de usuarios, ofimática y desarrollo de aplicaciones web con Python y PostgreSQL.">
+<title>Carlos Daniel Polanco | Soporte Tecnológico y de Aplicaciones</title>
+<meta name="description" content="Portafolio de Carlos Daniel Polanco, Ingeniero de Software con experiencia en soporte tecnológico y de aplicaciones: resolución de incidencias, capacitación de usuarios, documentación de casos, SQL y desarrollo con Python y PostgreSQL.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
@@ -115,6 +115,24 @@
   .cd .lk a:hover, .cd .lk a:focus-visible{ color:var(--ink); border-color:var(--ink); }
   .cd .lk a:focus-visible{ outline:1px dashed var(--green); outline-offset:3px; }
 
+  .casos{ margin-top:16px; border:1px solid var(--line); border-radius:6px; background:var(--card); overflow:hidden; }
+  .casos a{
+    display:grid; grid-template-columns:34px 1fr auto; gap:12px; align-items:baseline;
+    padding:13px 18px; text-decoration:none; border-top:1px solid var(--line);
+    transition:background .2s;
+  }
+  .casos a:first-child{ border-top:none; }
+  .casos a:hover, .casos a:focus-visible{ background:var(--bg); }
+  .casos a:focus-visible{ outline:1px dashed var(--green); outline-offset:-3px; }
+  .casos .n{ font-size:0.72rem; color:var(--green); }
+  .casos .t{ font-size:0.82rem; }
+  .casos .t small{ display:block; font-size:0.72rem; color:var(--dim); }
+  .casos .s{ font-size:0.66rem; color:var(--dim); text-transform:uppercase; letter-spacing:0.06em; white-space:nowrap; }
+  .intro{ margin-top:12px; font-size:0.82rem; color:var(--dim); max-width:640px; }
+  .mas{ margin-top:14px; display:flex; gap:18px; flex-wrap:wrap; }
+  .mas a{ font-size:0.76rem; color:var(--green); text-decoration:none; border-bottom:1px solid var(--green); }
+  .mas a:hover, .mas a:focus-visible{ color:var(--ink); border-color:var(--ink); }
+
   .stack{
     margin-top:16px;
     display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
@@ -137,18 +155,21 @@
 
   @media (max-width:600px){
     header.top nav{ display:none; }
+    .casos a{ grid-template-columns:28px 1fr; }
+    .casos .s{ display:none; }
   }
   @media (prefers-reduced-motion: reduce){
     html{ scroll-behavior:auto; }
-    .cd, .btns a, header.top nav a{ transition:none; }
+    .cd, .btns a, header.top nav a, .casos a{ transition:none; }
   }
 </style>
 </head>
 <body>
 
 <header class="top">
-  <div class="mark">Carlos Daniel Polanco<span>_/</span>DEV</div>
+  <div class="mark">Carlos Daniel Polanco<span>_/</span>IT</div>
   <nav>
+    <a href="#soporte">Soporte</a>
     <a href="#proyectos">Proyectos</a>
     <a href="#stack">Stack</a>
     <a href="#contacto">Contacto</a>
@@ -160,19 +181,42 @@
   <section class="hero">
     <div class="dots"><i></i><i></i><i></i></div>
     <div class="prompt">$ whoami</div>
-    <h1>Ingeniero de Software · Soporte Tecnológico: soporte a usuarios, ofimática y desarrollo de aplicaciones web con Python.</h1>
-    <p class="sub">Carlos Daniel Polanco. Atención y capacitación de usuarios, mesa de ayuda y manejo de Excel, Word y Outlook. En desarrollo: APIs REST con Flask y FastAPI, bases de datos PostgreSQL, pruebas con pytest, integración de IA a través de OpenRouter y despliegue en Render y Vercel.</p>
+    <h1>Ingeniero de Software · <b>Soporte Tecnológico y de Aplicaciones</b>: resuelvo incidencias, capacito usuarios y documento cada caso.</h1>
+    <p class="sub">Carlos Daniel Polanco. Soporte a usuarios en aplicaciones, Office y configuración de equipos, mesa de ayuda y revisión de datos con SQL. Mi base en desarrollo con Python y PostgreSQL me permite entender cómo funcionan los sistemas por dentro, reproducir errores y escalar al equipo técnico con información clara.</p>
 
     <div class="btns">
-      <a class="on" href="#proyectos">Ver proyectos</a>
+      <a class="on" href="#soporte">Ver casos de soporte</a>
+      <a href="#proyectos">Ver proyectos</a>
       <a href="https://github.com/Carlosp0607" target="_blank" rel="noopener">GitHub ↗</a>
       <a href="mailto:carlosdanielpolanco0@gmail.com">Escribir correo</a>
       <a href="HV_CarlosPolanco.pdf" download>Descargar CV ↓</a>
     </div>
 
     <div class="meta">
-      <div><div class="k">Enfoque</div><div class="v">Soporte tecnológico / Desarrollo Python</div></div>
+      <div><div class="k">Enfoque</div><div class="v">Soporte tecnológico y de aplicaciones</div></div>
       <div><div class="k">Formación</div><div class="v">Ing. de Software</div></div>
+      <div><div class="k">Base técnica</div><div class="v">SQL · Python · PostgreSQL</div></div>
+    </div>
+  </section>
+
+  <section id="soporte">
+    <div class="prompt">$ ls soporte/casos/</div>
+    <p class="intro">Casos documentados en formato ticket sobre mis propias aplicaciones: reporte del usuario, reproducción, diagnóstico con SQL, solución o escalamiento y prevención. Son casos simulados; los mensajes, tablas y reglas son los reales del código de cada sistema.</p>
+
+    <div class="casos">
+      <a href="https://github.com/Carlosp0607/soporte-portafolio/blob/main/casos/01-turno-del-dia-anterior-abierto.md" target="_blank" rel="noopener"><span class="n">01</span><span class="t">El turno de caja del día anterior quedó abierto<small>Don Parqueo · se revisa con SQL quién lo abrió y se cierra con su arqueo</small></span><span class="s">Nivel 1</span></a>
+      <a href="https://github.com/Carlosp0607/soporte-portafolio/blob/main/casos/02-sobrante-igual-a-la-base.md" target="_blank" rel="noopener"><span class="n">02</span><span class="t">El cierre de caja sale con sobrante igual a la base<small>Don Parqueo · error de uso; capacitación y mejora reportada a desarrollo</small></span><span class="s">Nivel 1</span></a>
+      <a href="https://github.com/Carlosp0607/soporte-portafolio/blob/main/casos/03-placa-con-ingreso-activo.md" target="_blank" rel="noopener"><span class="n">03</span><span class="t">"La placa ya tiene un ingreso activo"<small>Don Parqueo · salida no registrada; corrección del dato escalada a nivel 2</small></span><span class="s">Escalado</span></a>
+      <a href="https://github.com/Carlosp0607/soporte-portafolio/blob/main/casos/04-sin-tarifa-vigente.md" target="_blank" rel="noopener"><span class="n">04</span><span class="t">"No hay tarifa vigente para este tipo de vehículo"<small>Don Parqueo · configuración faltante; escalado al administrador</small></span><span class="s">Escalado</span></a>
+      <a href="https://github.com/Carlosp0607/soporte-portafolio/blob/main/casos/05-bloqueo-por-intentos.md" target="_blank" rel="noopener"><span class="n">05</span><span class="t">Usuario bloqueado por intentos fallidos<small>Don Parqueo · bloqueo por IP compartida en la caseta</small></span><span class="s">Nivel 1</span></a>
+      <a href="https://github.com/Carlosp0607/soporte-portafolio/blob/main/casos/06-archivo-no-valido-lexdoc.md" target="_blank" rel="noopener"><span class="n">06</span><span class="t">El documento no se deja subir<small>LexDoc · foto renombrada a PDF; validación por contenido del archivo</small></span><span class="s">Nivel 1</span></a>
+    </div>
+
+    <div class="mas">
+      <a href="https://github.com/Carlosp0607/soporte-portafolio" target="_blank" rel="noopener">repositorio completo ↗</a>
+      <a href="https://github.com/Carlosp0607/soporte-portafolio/blob/main/base-conocimiento.md" target="_blank" rel="noopener">base de conocimiento ↗</a>
+      <a href="https://github.com/Carlosp0607/soporte-portafolio/blob/main/manuales/manual-don-parqueo.md" target="_blank" rel="noopener">manual de usuario por rol ↗</a>
+      <a href="https://github.com/Carlosp0607/soporte-portafolio/tree/main/sql" target="_blank" rel="noopener">consultas SQL de diagnóstico ↗</a>
     </div>
   </section>
 
@@ -183,10 +227,26 @@
 
       <article class="cd">
         <div class="h">
+          <h3>Mesa de Ayuda: Tickets de soporte y análisis de indicadores</h3>
+          <span class="st demo">demo en vivo</span>
+        </div>
+        <p>API de soporte técnico que registra incidentes y requerimientos con prioridad, controla el ciclo de vida del ticket (abierto, en proceso, escalado, cerrado) y escala del nivel 1 al nivel 2. Calcula el SLA de cada caso según su prioridad, exige documentar la solución para cerrar y sugiere soluciones desde una base de conocimiento. Los indicadores se calculan con SQL: porcentaje de SLA cumplido, horas promedio de solución, tasa de escalamiento y problemas más repetidos, y se exportan a CSV.</p>
+        <p class="nota">Los datos del análisis son tickets simulados.</p>
+        <div class="foot">
+          <b>Python</b><b>Flask</b><b>API REST</b><b>PostgreSQL</b><b>Aiven</b><b>Render</b>
+          <span class="lk">
+            <a href="https://mesa-ayuda-4wfr.onrender.com/reportes/resumen" target="_blank" rel="noopener">indicadores ↗</a>
+            <a href="https://github.com/Carlosp0607/mesa-ayuda" target="_blank" rel="noopener">código ↗</a>
+          </span>
+        </div>
+      </article>
+
+      <article class="cd">
+        <div class="h">
           <h3>LexDoc: Sistema de gestión legal</h3>
           <span class="st">prestación de servicios</span>
         </div>
-        <p>Plataforma para la gestión de casos y documentos de un despacho jurídico, desarrollada en prestación de servicios para Turizo Lawyers Enterprise S.A. Tres perfiles con permisos diferenciados (administrador, jefe de firma y abogado), donde cada abogado accede únicamente a los casos que le fueron asignados. Incluye carga de documentos y alertas automáticas antes y después del vencimiento de plazos procesales. El aislamiento entre abogados está cubierto por pruebas automatizadas en pytest.</p>
+        <p>Plataforma para la gestión de casos y documentos de un despacho jurídico, desarrollada en prestación de servicios para Turizo Lawyers Enterprise S.A. Además del desarrollo, di soporte a los usuarios de la firma y los capacité según su rol. Tres perfiles con permisos diferenciados (administrador, jefe de firma y abogado), donde cada abogado accede únicamente a los casos que le fueron asignados. Incluye carga de documentos y alertas automáticas antes y después del vencimiento de plazos procesales. El aislamiento entre abogados está cubierto por pruebas automatizadas en pytest.</p>
         <p class="nota">La demo enlazada usa datos ficticios.</p>
         <div class="foot">
           <b>Python</b><b>Flask</b><b>PostgreSQL</b><b>pytest</b><b>GitHub Actions</b><b>Render</b>
@@ -228,21 +288,6 @@
         </div>
       </article>
 
-      <article class="cd">
-        <div class="h">
-          <h3>Mesa de Ayuda: Tickets de soporte y análisis de indicadores</h3>
-          <span class="st demo">demo en vivo</span>
-        </div>
-        <p>API de soporte técnico que registra incidentes y requerimientos con prioridad, controla el ciclo de vida del ticket (abierto, en proceso, escalado, cerrado) y escala del nivel 1 al nivel 2. Calcula el SLA de cada caso según su prioridad, exige documentar la solución para cerrar y sugiere soluciones desde una base de conocimiento. Los indicadores se calculan con SQL: porcentaje de SLA cumplido, horas promedio de solución, tasa de escalamiento y problemas más repetidos, y se exportan a CSV.</p>
-        <p class="nota">Los datos del análisis son tickets simulados.</p>
-        <div class="foot">
-          <b>Python</b><b>Flask</b><b>API REST</b><b>PostgreSQL</b><b>Aiven</b><b>Render</b>
-          <span class="lk">
-            <a href="https://mesa-ayuda-4wfr.onrender.com/reportes/resumen" target="_blank" rel="noopener">indicadores ↗</a>
-            <a href="https://github.com/Carlosp0607/mesa-ayuda" target="_blank" rel="noopener">código ↗</a>
-          </span>
-        </div>
-      </article>
 
       <article class="cd">
         <div class="h">
@@ -292,14 +337,14 @@
     <div class="prompt">$ cat stack.txt</div>
 
     <div class="stack">
-      <div class="cell"><div class="k">Soporte tecnológico</div><div class="v">Soporte a usuarios<br>Mesa de ayuda<br>Gestión de tickets</div></div>
+      <div class="cell"><div class="k">Soporte tecnológico</div><div class="v">Soporte a usuarios<br>Soporte de aplicaciones<br>Configuración de equipos</div></div>
+      <div class="cell"><div class="k">Mesa de ayuda</div><div class="v">Gestión de tickets<br>Capacitación por rol<br>Documentación de casos</div></div>
+      <div class="cell"><div class="k">Datos</div><div class="v">SQL · PostgreSQL<br>Aiven · Supabase</div></div>
       <div class="cell"><div class="k">Ofimática</div><div class="v">Excel (tablas dinámicas y fórmulas)<br>Word · Outlook</div></div>
-      <div class="cell"><div class="k">Lenguaje</div><div class="v">Python</div></div>
-      <div class="cell"><div class="k">Backend</div><div class="v">Flask · FastAPI<br>API REST</div></div>
-      <div class="cell"><div class="k">Datos</div><div class="v">PostgreSQL<br>Aiven · Supabase</div></div>
+      <div class="cell"><div class="k">Contable</div><div class="v">Contabilidad<br>Estados financieros<br>SENA, en curso</div></div>
+      <div class="cell"><div class="k">Desarrollo</div><div class="v">Python<br>Flask · FastAPI<br>API REST</div></div>
       <div class="cell"><div class="k">Inteligencia artificial</div><div class="v">Integración de LLM<br>OpenRouter</div></div>
-      <div class="cell"><div class="k">Pruebas</div><div class="v">pytest</div></div>
-      <div class="cell"><div class="k">Infraestructura</div><div class="v">Git / GitHub<br>GitHub Actions<br>Render · Vercel</div></div>
+      <div class="cell"><div class="k">Infraestructura</div><div class="v">Git / GitHub<br>GitHub Actions · pytest<br>Render · Vercel</div></div>
     </div>
   </section>
 
