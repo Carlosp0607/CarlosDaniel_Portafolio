@@ -103,6 +103,10 @@
   .cd .st.grado{ color:var(--dim); border-color:var(--line); }
 
   .cd p{ margin-top:10px; font-size:0.82rem; color:var(--dim); }
+  .cd p.sop{ margin-top:8px; font-size:0.76rem; color:var(--green); }
+  .cd ul{ margin-top:10px; padding-left:18px; font-size:0.82rem; color:var(--dim); }
+  .cd ul li{ margin-bottom:4px; }
+  .cd .sub{ margin-top:4px; font-size:0.74rem; color:var(--dim); }
   .cd p.nota{ margin-top:8px; font-size:0.74rem; color:var(--dim); opacity:0.85; }
 
   .cd .foot{
@@ -170,6 +174,7 @@
   <div class="mark">Carlos Daniel Polanco<span>_/</span>IT</div>
   <nav>
     <a href="#soporte">Soporte</a>
+    <a href="#experiencia">Experiencia</a>
     <a href="#proyectos">Proyectos</a>
     <a href="#stack">Stack</a>
     <a href="#contacto">Contacto</a>
@@ -220,6 +225,27 @@
     </div>
   </section>
 
+  <section id="experiencia">
+    <div class="prompt">$ cat experiencia.txt</div>
+    <div class="projects">
+      <article class="cd">
+        <div class="h">
+          <h3>Desarrollador y Soporte Tecnológico</h3>
+          <span class="st">prestación de servicios</span>
+        </div>
+        <div class="sub">Turizo Lawyers Enterprise S.A. · Santa Marta, Magdalena · ene. 2024 – may. 2025</div>
+        <ul>
+          <li>Brindé soporte a un equipo de 6 a 10 usuarios en LexDoc y Office: resolví en promedio 3 a 4 incidencias por semana de software, configuración de aplicaciones, cuentas y equipos.</li>
+          <li>Capacité a usuarios de los 3 roles (administrador, jefe y abogado) para facilitar la adopción de las herramientas.</li>
+          <li>Desarrollé LexDoc y le di mantenimiento continuo, corrigiendo las fallas que reportaban los usuarios.</li>
+        </ul>
+        <div class="foot">
+          <b>Soporte a usuarios</b><b>Gestión de incidentes</b><b>Capacitación</b><b>Mantenimiento de aplicaciones</b>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <section id="proyectos">
     <div class="prompt">$ ls proyectos/</div>
 
@@ -231,6 +257,7 @@
           <span class="st demo">demo en vivo</span>
         </div>
         <p>API de soporte técnico que registra incidentes y requerimientos con prioridad, controla el ciclo de vida del ticket (abierto, en proceso, escalado, cerrado) y escala del nivel 1 al nivel 2. Calcula el SLA de cada caso según su prioridad, exige documentar la solución para cerrar y sugiere soluciones desde una base de conocimiento. Los indicadores se calculan con SQL: porcentaje de SLA cumplido, horas promedio de solución, tasa de escalamiento y problemas más repetidos, y se exportan a CSV.</p>
+        <p class="sop">Soporte: replica el flujo real de una mesa de ayuda, con registro, priorización, escalamiento de nivel 1 a nivel 2 y cierre con solución documentada.</p>
         <p class="nota">Los datos del análisis son tickets simulados.</p>
         <div class="foot">
           <b>Python</b><b>Flask</b><b>API REST</b><b>PostgreSQL</b><b>Aiven</b><b>Render</b>
@@ -247,6 +274,7 @@
           <span class="st">prestación de servicios</span>
         </div>
         <p>Plataforma para la gestión de casos y documentos de un despacho jurídico, desarrollada en prestación de servicios para Turizo Lawyers Enterprise S.A. Además del desarrollo, di soporte a los usuarios de la firma y los capacité según su rol. Tres perfiles con permisos diferenciados (administrador, jefe de firma y abogado), donde cada abogado accede únicamente a los casos que le fueron asignados. Incluye carga de documentos y alertas automáticas antes y después del vencimiento de plazos procesales. El aislamiento entre abogados está cubierto por pruebas automatizadas en pytest.</p>
+        <p class="sop">Soporte: usado en producción por la firma; atendí las incidencias y capacité a los usuarios de cada rol.</p>
         <p class="nota">La demo enlazada usa datos ficticios.</p>
         <div class="foot">
           <b>Python</b><b>Flask</b><b>PostgreSQL</b><b>pytest</b><b>GitHub Actions</b><b>Render</b>
@@ -263,6 +291,7 @@
           <span class="st demo">demo en vivo</span>
         </div>
         <p>Sistema multiempresa para la operación diaria de parqueaderos. Varias empresas cliente trabajan sobre la misma base de datos con aislamiento total de su información: ninguna consulta devuelve registros de otra empresa. Cubre ingreso y salida de vehículos con cálculo de tarifa por minuto, hora o día, turnos de caja con cuadre por método de pago, mensualidades y reportes exportables a Excel. El cobro se ejecuta dentro de una transacción SQL con bloqueo del registro, y las reglas de cobro y de acceso están cubiertas por pruebas con pytest que corren en cada cambio mediante GitHub Actions.</p>
+        <p class="sop">Soporte: 5 casos documentados en este portafolio (turnos de caja, tarifas, bloqueos de usuario, ingresos duplicados) y manual de usuario por rol.</p>
         <p class="nota">Botón "Entrar como invitado": modo de solo lectura con datos ficticios.</p>
         <div class="foot">
           <b>Python</b><b>FastAPI</b><b>PostgreSQL</b><b>Aiven</b><b>pytest</b><b>Render</b>
@@ -279,6 +308,7 @@
           <span class="st demo">demo en vivo</span>
         </div>
         <p>API REST para agendar citas en un consultorio con varias especialidades, con una página web para crear, ver, editar y eliminar citas. El paciente describe su motivo y un modelo de lenguaje vía OpenRouter sugiere la especialidad; si el servicio falla, la cita se crea igual con Medicina general. Los datos se validan con Pydantic y la regla de una cita por hora se garantiza con un índice único en PostgreSQL. Pruebas con pytest en cada cambio mediante GitHub Actions.</p>
+        <p class="sop">Soporte: si el servicio de IA falla, la cita se crea igual; el usuario nunca queda bloqueado.</p>
         <div class="foot">
           <b>Python</b><b>FastAPI</b><b>Pydantic</b><b>PostgreSQL</b><b>Supabase</b><b>OpenRouter</b><b>pytest</b><b>Render</b>
           <span class="lk">
@@ -337,12 +367,11 @@
     <div class="prompt">$ cat stack.txt</div>
 
     <div class="stack">
-      <div class="cell"><div class="k">Soporte tecnológico</div><div class="v">Soporte a usuarios<br>Soporte de aplicaciones<br>Configuración de equipos</div></div>
+      <div class="cell"><div class="k">Soporte tecnológico</div><div class="v">Soporte a usuarios<br>Soporte de aplicaciones<br>Configuración de equipos<br>Windows · Linux</div></div>
       <div class="cell"><div class="k">Mesa de ayuda</div><div class="v">Gestión de tickets<br>Capacitación por rol<br>Documentación de casos</div></div>
       <div class="cell"><div class="k">Datos</div><div class="v">SQL · PostgreSQL<br>Aiven · Supabase</div></div>
       <div class="cell"><div class="k">Ofimática</div><div class="v">Excel (tablas dinámicas y fórmulas)<br>Word · Outlook</div></div>
-      <div class="cell"><div class="k">Contable</div><div class="v">Contabilidad<br>Estados financieros<br>SENA, en curso</div></div>
-      <div class="cell"><div class="k">Desarrollo</div><div class="v">Python<br>Flask · FastAPI<br>API REST</div></div>
+            <div class="cell"><div class="k">Desarrollo</div><div class="v">Python<br>Flask · FastAPI<br>API REST</div></div>
       <div class="cell"><div class="k">Inteligencia artificial</div><div class="v">Integración de LLM<br>OpenRouter</div></div>
       <div class="cell"><div class="k">Infraestructura</div><div class="v">Git / GitHub<br>GitHub Actions · pytest<br>Render · Vercel</div></div>
     </div>
